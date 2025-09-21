@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Host Grotesk", sans-serif;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -15,9 +14,9 @@ body {
 }
 
 :root {
-  --primary-color: #154d71;
-  --second-color: #1c6ea4;
-  --third-color: #33a1e0;
+  --primary-color: rgb(21, 77, 113);
+  --second-color: rgb(28, 110, 164);
+  --third-color: rgb(51, 161, 224);
   --netral: #fff9af;
 }
 
@@ -179,7 +178,7 @@ img {
   transition: all 300ms;
   margin-top: 10px;
   cursor: pointer;
-  margin-left: 540px;
+  margin-left: 550px;
 }
 
 .hal2 button:hover {
@@ -277,6 +276,11 @@ iframe {
   border: 2px solid var(--primary-color);
 }
 
+iframe:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
 .bawahan {
   flex: 2;
 }
@@ -318,7 +322,12 @@ iframe {
   align-content: center;
   width: 50px;
   height: 50px;
-  background-color: var(--third-color);
+  background-color: rgb(51, 161, 224, 0.5);
+  transition: all 200ms;
+}
+
+.lokasi .icon-lokasi i:hover {
+  background-color: rgb(51, 161, 224);
 }
 
 .telepon {
@@ -335,7 +344,12 @@ iframe {
   align-content: center;
   width: 50px;
   height: 50px;
-  background-color: var(--third-color);
+  background-color: rgb(51, 161, 224, 0.5);
+  transition: all 200ms;
+}
+
+.telepon .icon-telepon i:hover {
+  background-color: rgb(51, 161, 224);
 }
 
 .telepon .deskripsi-tel p {
@@ -356,7 +370,12 @@ iframe {
   align-content: center;
   width: 50px;
   height: 50px;
-  background-color: var(--third-color);
+  background-color: rgb(51, 161, 224, 0.5);
+  transition: all 200ms;
+}
+
+.email .icon-email i:hover {
+  background-color: rgb(51, 161, 224);
 }
 
 .copyright {
